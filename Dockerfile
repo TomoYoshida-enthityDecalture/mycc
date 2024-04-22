@@ -12,6 +12,9 @@ RUN echo "tomo:tomo" | chpasswd
 # add "tomo" to superuser
 RUN gpasswd -a tomo sudo
 
+# make a directory "mycc"
+RUN mkdir /home/tomo/mycc
+
 # run the container with "tomo"
 USER tomo
 
